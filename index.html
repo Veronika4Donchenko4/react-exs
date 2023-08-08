@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button</title>
+</head>
+<body>
+    <div class="first-box">
+        <div class="button-box">
+            <button type="button" id="hovered" onmouseover="hover()">Click Me</button>
+        </div>
+        <h2 class="description-first-block"><span class="arrow"></span>Look what I can do</h2>
+        <div class="hover-result-box">
+            <ul id="hover-result"></ul>
+        </div>
+    </div>
+    <div class="second-box">
+        <div class="button-box">
+            <button type="button" id="hovered" onclick="clickButton()">Click Me</button>
+        </div>
+        <h2 class="description-first-block"><span class="arrow"> </span>Look what I can do</h2>
+        <div class="result-box">
+            <div class="delete-class-by-click">
+                <div class="one two three four five six has-class" id="classBlock">
+                    <p id="blockText">Check the classes in 
+                        developer panel</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="third-box">
+        <div class="button-box">
+            <button type="button" id="button" onclick="trafficLight()">Click Me</button>
+        </div>
+        <h2 class="description-first-block"><span class="arrow"></span>Look what I can do</h2>
+        <div class="result-box">
+            <ul id="result-list">
+                <li id="empty"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="fourth-block">
+        <div class="button-box">
+            <button type="button" id="button" onclick="clickCount()">Click Me</button>
+        </div>
+        <h2 class="description-first-block"><span class="arrow"></span>Look what I can do</h2>
+        <div class="result-box">
+            <span id="counter-text">Clicks Count: <span id="counter">0</span></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

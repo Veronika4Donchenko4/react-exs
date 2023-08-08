@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.first-box, .second-box, .third-box, .fourth-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  border: 2px solid rgba(104, 99, 99, 0.686);
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgb(226, 234, 147);
+}
+@media (max-width: 575px) {
+  .first-box, .second-box, .third-box, .fourth-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-box .arrow, .second-box .arrow, .third-box .arrow, .fourth-block .arrow {
+    display: none;
+  }
+  .first-box .button-box, .second-box .button-box, .third-box .button-box, .fourth-block .button-box {
+    width: 100%;
+    text-align: center;
+  }
+}
+.first-box .description-first-block, .second-box .description-first-block, .third-box .description-first-block, .fourth-block .description-first-block {
+  padding: 0px 25px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.first-box {
+  margin: 0 auto 25px;
+}
+
+.button-box {
+  position: relative;
+  width: 28%;
+}
+.button-box button {
+  background: linear-gradient(to right, rgb(133, 248, 137), rgb(50, 114, 98));
+  border-radius: 50px;
+  height: 60px;
+  border: none;
+  padding: 10px 35px;
+  cursor: pointer;
+
+}
+.button-box button:hover {
+  background: linear-gradient(to left, rgb(52, 89, 149), rgb(173, 154, 11), rgb(0, 255, 38));
+  transform: scale(1.1);
+}
+
+.hover-result-box {
+  width: 60%;
+  height: 150px;
+  background-color: rgb(255, 249, 249);
+  border: 2px solid rgba(104, 99, 99, 0.686);
+}
+
+.hover-result-box li {
+  list-style-type: none;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: rgb(4, 4, 155);
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: green;
+}
+
+.orange {
+  color: orange;
+}
+
+.second-box {
+  margin: 0 auto 15px;
+}
+.second-box .button-box button:hover {
+  transform: scale(1);
+}
+.second-box .button-box button:active {
+  transform: scale(1.1);
+}
+.second-box .result-box {
+  width: 60%;
+  height: 150px;
+  background-color:  rgb(255, 249, 249);
+  border: 2px solid rgba(104, 99, 99, 0.686);
+}
+.second-box .delete-class-by-click #classBlock {
+  height: 150px;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+.second-box .delete-class-by-click #classBlock p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.third-box {
+  margin: 0 auto 15px;
+}
+.third-box .result-box {
+  width: 60%;
+  height: 150px;
+  background-color: rgb(255, 249, 249);
+  border: 2px solid rgba(104, 99, 99, 0.686);
+}
+.third-box .result-box li {
+  list-style-type: none;
+  padding: 0 0 0 40px;
+}
+.third-box .result-box .text {
+  color: #fff;
+  text-transform: capitalize;
+  padding: 50px 15px 15px;
+  text-align: center;
+}
+.third-box .result-box .red {
+  text-align: left;
+  position: relative;
+  top: 15px;
+}
+.third-box .result-box .red::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  top: -5px;
+  bottom: 0;
+  left: 170px;
+  right: 0;
+}
+@media (max-width: 400px) {
+  .third-box .result-box .red::after {
+    left: 100px;
+  }
+}
+.third-box .result-box .yellow {
+  text-align: left;
+  position: relative;
+  top: 50px;
+}
+.third-box .result-box .yellow::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 50%;
+  top: -5px;
+  bottom: 0;
+  left: 170px;
+  right: 0;
+}
+@media (max-width: 400px) {
+  .third-box .result-box .yellow::after {
+    left: 100px;
+  }
+}
+.third-box .result-box .green {
+  text-align: left;
+  position: relative;
+  top: 85px;
+}
+.third-box .result-box .green::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 50%;
+  top: -5px;
+  bottom: 0;
+  left: 170px;
+  right: 0;
+}
+@media (max-width: 400px) {
+  .third-box .result-box .green::after {
+    left: 100px;
+  }
+}
+
+.fourth-block .result-box {
+  font-family: "Rubik Vinyl", cursive;
+  width: 60%;
+  height: 150px;
+  background-color:rgb(255, 249, 249);
+  border: 2px solid rgba(104, 99, 99, 0.686);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
