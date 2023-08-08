@@ -130,7 +130,7 @@
   padding: 0 0 0 40px;
 }
 .third-box .result-box .text {
-  color: #fff;
+  color: blacks;
   text-transform: capitalize;
   padding: 50px 15px 15px;
   text-align: center;
@@ -212,5 +212,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: oranges;
 }
